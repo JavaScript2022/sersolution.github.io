@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*, *:before, *:after{
+	padding: 0;
+	margin: 0;
+	border:0;
+	box-sizing: border-box;
+	color: #d9d9d9;
+	
+}
+
+html,body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	background: #151515;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.005);
+	backdrop-filter: blur(20px);
+	z-index: 2;
+}
+
+.header__body{
+	position: relative;
+	
+	display: flex;
+	justify-content:space-between;
+	height: 80px;
+	align-items: center;	
+}
+
+.header__link {
+	display: flex;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	
+
+}
+
+.header__list{
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.header__list li {
+	list-style: none;
+	margin-right:20px ;
+	
+
+}
+
+.header__logo {
+	flex: 0 0 60px;
+	border-radius: ;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	
+}
+
+.header__logo img {
+	max-width: 100%;
+	display: block;
+}
+
+.content__text {
+	font-size: 16px;
+	line-height: 25px ;
+}
+
+.content__text p {
+	margin-bottom: 20px;
+}
+.content {
+	padding-top: 100px;
+	flex: 1 1 auto;
+}
+ 
+.header__burger {
+	display: none; //скрыть бургер при всех остальных разрешениях экрана
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+@media (max-width:767px) {
+	body.lock {
+		overflow: hidden;
+	}
+
+	.header__link {
+		font-size: 24px;
+	}
+
+
+	.content {
+		padding: 55px 0 0 0;
+	}
+
+
+	.header__logo {
+		flex: 0 0 40px;
+		
+		
+	}
+
+	.header__body {
+		height: 50px;
+	}
+
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+	}
+
+	.header__burger span {
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+		transition: all 0.4s ease 0s;
+	}
+
+	.header__burger:before,
+	.header__burger:after {
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.4s ease 0s;
+	}
+
+	.header__burger:before {
+		top: 0;
+	}
+
+	.header__burger:after {
+		bottom: 0;
+	}
+
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background: rgba(0, 0, 0, 0.005);
+		backdrop-filter: blur(10px);
+		padding-top: 60px;
+		transition: all 0.8s ease 0s;
+	}
+
+	.header__menu.active {
+		top:0;
+	}
+
+	.header__list {
+		display: block;
+	}
+
+	.header__list li {
+		margin:  0px 0px 25px 20px;
+	}
+
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+
+	.header__burger.active span {
+		transform: scale(0);
+	}
+
+	
+
+}
+////////////////fooooter
+
+.footer {
+	
+      width: 100%;
+       
+}
+
+.main-content {
+	padding: 50px 0 0 0;
+	background: #151515;
+      display: flex;
+}
+
+.main-content .box {
+      flex-basis: 50%;
+      padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;  
+}
+
+.box .footer__content {
+      margin: 20px 0 0 0;
+      position: relative;
+}
+
+.box .footer__content:before{
+      position: absolute;
+      content: '';
+      top: -10px;
+      height: 2px;
+      width: 100%;
+      background: #474747;
+}
+
+.box .footer__content:after{
+     position: absolute; 
+     content: '';
+     height: 2px;
+     width: 15%;
+     background: #339933;
+     top: -10px;
+}
+
+.left .footer__content p {
+      text-align: justify;
+}
+
+.left .footer__content .social {
+    margin: 20px 0 0 0;  
+}
+
+.left .footer__content .social a{
+      padding: 0 2px;
+}
+
+.left .footer__content .social a span {
+     height: 40px;
+     width: 40px; 
+     background: #1b1b1b;
+     line-height: 40px;
+     text-align: center;
+     font-size: 18px;
+     border-radius: 5px;
+     transition: 0.3s;
+}
+
+.left .footer__content .social a span:hover {
+      background: #339933;
+}
+
+.center .footer__content .fas {
+      font-size: 1.4375rem;
+      height: 40px;
+      width: 40px;
+      line-height: 45px;
+      text-align: center;
+      border-radius: 50%;
+      transition: 00.3s;
+      cursor: pointer;
+}
+
+.center .footer__content .fas:hover {
+      background: #339933; 
+}
+
+.center .footer__content .footer__text {
+      font-style: 1.0625em;
+      font-weight: 500;
+      padding-left: 10px;
+}
+
+.center .footer__content .phone {
+      margin: 10px 0;
+}
+
+.right form .footer__text {
+     font-size:1.0625rem;
+     margin-bottom: 2px;
+     color: #656565; 
+}
+
+.right form .msg {
+      margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+      width: 100%;
+      font-size: 1.0625rem;
+      background: #151515 ;
+      padding-left: 10px;
+      border: 1px solid #222222;
+}
+
+.right form input{
+      height: 35px;
+}
+
+.right form input:focus,
+ .right form textarea:focus{
+       outline-color: #339933;
+ }
+
+ .right form .footer__btn {
+       margin-top: 10px;
+ }
+
+ .right form .footer__btn button{
+       height: 40px;
+       width: 100%;
+       border:none;
+       outline: none;
+       background: #339933;
+       font-size: 1.0625rem;
+       font-weight: 500;
+       cursor: pointer;
+       transition: 0.3s;
+       color: rgb(180, 180, 180);
+ }
+
+ .right form .footer__btn button:hover {
+       background: #000;
+ }
+
+.bottom center{
+      padding: 5px;
+      font-size: 0.9375rem;
+      background: #151515;
+}
+
+.bottom center span {
+      color: #656565;
+}
+
+.bottom center a{
+      color: #339933;
+      text-decoration: none;
+}
+.bottom center a:hover{
+     text-decoration: underline; 
+}
+
+@media screen and (max-width:900px) {
+      footer{
+            position: relative;
+            bottom: 0px;
+      }
+      .main-content{
+           flex-wrap: wrap; 
+           flex-direction: column;
+      }
+      .main-content .box{
+            margin: 5px 0 ;
+      }
+}
