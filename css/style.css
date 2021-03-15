@@ -16,6 +16,25 @@ html,body {
 	background: #151515;
 }
 
+.banner{
+	min-height: 100vh;
+	 position: relative;
+	 background-position: center left;
+	 background-repeat: no-repeat;
+	 background-size: auto 100%;
+ }
+ .banner-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0; 
+	bottom: 0;
+	z-index: 1;
+	pointer-events: none;
+	background: #000;
+	opacity: 0;
+ }
+
 .container {
 	max-width: 1180px;
 	margin: 0 auto;
@@ -95,7 +114,7 @@ html,body {
 	margin-bottom: 20px;
 }
 .content {
-	padding-top: 100px;
+	padding-top: 10px;
 	flex: 1 1 auto;
 }
  
