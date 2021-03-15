@@ -1,4 +1,4 @@
-var counter = 200;
+var counter = 100;
 var opacityCount = 0;
 var lastScroll = 0;
 
@@ -7,7 +7,7 @@ window.addEventListener("scroll",function(){
       if (currentScroll > 0 && lastScroll <= currentScroll){
             lastScroll = currentScroll;
             //console.log('up')
-            if(counter < 201 && counter>100){
+            if(counter < 101 && counter>1){
                  counter-=1; 
                 // console.log(counter);
                 opacityCount +=0.015;
@@ -19,7 +19,7 @@ window.addEventListener("scroll",function(){
       }else{
             lastScroll = currentScroll;
             //console.log('down')
-            if(counter < 200){
+            if(counter < 100){
                   counter+=1; 
                 //console.log(counter)
                 opacityCount -=0.015;
