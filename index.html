@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/icons.js" crossorigin="anonymous"></script>
   <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -52,11 +53,8 @@
             </div>
       </header>
 
-            <div class="banner" style="background-image: url(img/banner.jpg);">
-           
-        <div class="banner-overlay"></div> 
-
-           <div class="banner__text">
+      <div class="banner" style="background-image: url(img/banner.jpg);">
+        <div class="banner__text">
             
             <p><span class="fas fa-pencil-ruler"></span>  Инженерные решения по системам автоматического полива, освещения и видеонаблюдения</p>
             <br>
@@ -65,8 +63,92 @@
             <p><span class="fas fa-mobile-alt"> </span>  С возможностью контроля с большинства современных гаджетов</p>
             
              </div>
-
+        <div class="banner-overlay"></div> 
    </div>
+
+   <section class="swiper">  <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <img src="quote.png" class="quote" alt=""> 
+                    <div class="content">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
+                          <div class="details">
+                                <div class="imgBx">
+                                      <img src="img/man.jpg" alt="">
+                                </div>
+                                <h3>Сергей Бондарь <br><span>Специалист</span></h3>
+                          </div>
+                    </div> 
+                </div>
+          </div>
+          <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <img src="quote.png" class="quote" alt=""> 
+                    <div class="content">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
+                          <div class="details">
+                                <div class="imgBx">
+                                      <img src="img/man.jpg" alt="">
+                                </div>
+                                <h3>Сергей Петров <br><span>Специалист</span></h3>
+                          </div>
+                    </div> 
+                </div>
+          </div>
+          <div class="swiper-slide">
+                <div class="testimonialBox">
+                    <img src="quote.png" class="quote" alt=""> 
+                    <div class="content">
+                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
+                          <div class="details">
+                                <div class="imgBx">
+                                      <img src="img/man.jpg" alt="">
+                                </div>
+                                <h3>Надежда Степанова <br><span>Проектирование систем</span></h3>
+                          </div>
+                    </div> 
+                </div>
+          </div>
+        <div class="swiper-slide">
+              <div class="testimonialBox">
+                  <img src="quote.png" class="quote" alt=""> 
+                  <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
+                        <div class="details">
+                              <div class="imgBx">
+                                    <img src="img/man.jpg" alt="">
+                              </div>
+                              <h3>Перевезенцев Владимир <br><span>Специалист по электросетям</span></h3>
+                        </div>
+                  </div> 
+              </div>
+        </div>
+        
+      </div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+     loop: true,
+    });
+  </script>
+
+
+
 
       <section class="content">
           <div class="container">
@@ -156,6 +238,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/jquery.js"></script>
-  <script src="js/custom.js"></script>
+      <script src="js/custom.js"></script>
 </body>
 </html>
