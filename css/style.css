@@ -5,7 +5,7 @@
 	margin: 0;
 	border:0;
 	box-sizing: border-box;
-	color: #d9d9d9;
+	color: rgb(214, 214, 214);
 	
 }
 
@@ -22,6 +22,7 @@ html,body {
 	 background-position: center center;
 	 background-repeat: no-repeat;
 	 background-size: auto 200%;
+       color: #fff;
  }
  .banner-overlay{
 	position: absolute;
@@ -33,6 +34,7 @@ html,body {
 	pointer-events: none;
 	background: #000;
 	opacity: 0;
+
  }
 
  .banner__text {
@@ -40,15 +42,34 @@ html,body {
 	 top: 100px;
 	 left: 10px;
 	 right: 10px;
+      
+       font-size: 20px;
+       
+      
 	
+ }
+
+ .banner__text p {
+    border: 1px solid #fff;  
+    border-radius: 10px; 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px; 
+    text-align: center;
  }
 
 
  /*swiper about start*/
+.about {
+      padding: 50px 0 0 20px;
+      font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
  .swiper{
       position: relative;
       width: 100%;
-      min-height: 100vh;
+      min-height: vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -67,7 +88,7 @@ html,body {
       background-size: cover;
       width: 320px;
       background: #151515;
-      box-shadow: 0 15px 50px rgba(127,255,0,0.9);
+      box-shadow: 0px 0px 35px rgba(127,255,0,0.9);
       filter: blur(4px);
       border-radius: 10px;
     }
@@ -83,18 +104,14 @@ html,body {
           position: relative;
           width: 100%;
           padding: 40px;
-          padding-top: 90px;
+          padding-top: 0px;
           color: #999;
 
     }
 
-    .testimonialBox .quote {
-          position: absolute;
-          top: 20px;
-          right: 30px;
-          opacity: 0.2;
+  
 
-    }
+  
 
     .testimonialBox .details {
           display: flex;
@@ -124,7 +141,7 @@ html,body {
          font-size: 16px;
          font-weight: 400;
          letter-spacing: 1px;
-         color: #2196f3;
+         color: #339933;
          line-height: 1.1em; 
     }
 
@@ -137,6 +154,11 @@ html,body {
     .swiper-container-3d .swiper-slide-shadow-right {
           background-image: none;
     }
+
+
+
+
+
  /*swiper about end*/
 
 .container {
