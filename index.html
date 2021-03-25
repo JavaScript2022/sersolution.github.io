@@ -32,10 +32,10 @@
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li>
-                                <a href="#" class="header__link">главная</a>
+                                <a href="#start" class="header__link">главная</a>
                             </li>
                              <li>
-                                <a href="#" class="header__link">о нас</a>
+                                <a href="#about" class="header__link">о нас</a>
                             </li>
                             <li>
                               <a href="#" class="header__link">услуги</a>
@@ -53,7 +53,7 @@
             </div>
       </header>
 
-      <div class="banner" style="background-image: url(img/banner.jpg);">
+      <div class="banner" id="start" style="background-image: url(img/banner.jpg);">
         <div class="banner__text">
             
             <p><span class="fas fa-pencil-ruler"></span>  Инженерные решения по системам автоматического полива, освещения и видеонаблюдения</p>
@@ -66,7 +66,12 @@
         <div class="banner-overlay"></div> 
    </div>
 
-   <section class="swiper">  <!-- Swiper -->
+
+
+
+
+   <h2 class="about" id="about">о нас</h2>
+   <section  class="swiper">  <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -76,7 +81,7 @@
                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
                           <div class="details">
                                 <div class="imgBx">
-                                      <img src="img/man.jpg" alt="">
+                                      <img src="img/sb.jpg" alt="">
                                 </div>
                                 <h3>Сергей Бондарь <br><span>Специалист</span></h3>
                           </div>
@@ -90,7 +95,7 @@
                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
                           <div class="details">
                                 <div class="imgBx">
-                                      <img src="img/man.jpg" alt="">
+                                      <img src="img/sp.jpg" alt="">
                                 </div>
                                 <h3>Сергей Петров <br><span>Специалист</span></h3>
                           </div>
@@ -104,9 +109,9 @@
                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
                           <div class="details">
                                 <div class="imgBx">
-                                      <img src="img/man.jpg" alt="">
+                                      <img src="img/ns.jpg" alt="">
                                 </div>
-                                <h3>Надежда Степанова <br><span>Проектирование систем</span></h3>
+                                <h3>Надежда <br> Степанова <br><span>Проектирование систем</span></h3>
                           </div>
                     </div> 
                 </div>
@@ -118,9 +123,9 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum natus in sed sequi, nesciunt eaque fuga porro sapiente laboriosam consequatur excepturi qui delectus cum officia exercitationem doloremque aut! Est cum expedita, tempora architecto eius optio. Vero aperiam in quibusdam facere?</p>
                         <div class="details">
                               <div class="imgBx">
-                                    <img src="img/man.jpg" alt="">
+                                    <img src="img/vp.jpg" alt="">
                               </div>
-                              <h3>Перевезенцев Владимир <br><span>Специалист по электросетям</span></h3>
+                              <h3> Владимир <br>Перевезенцев <br><span>Специалист <br> по электросетям</span></h3>
                         </div>
                   </div> 
               </div>
@@ -129,6 +134,10 @@
       </div>
     </div>
 </section>
+
+
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -190,13 +199,19 @@
                    <div class="phone">
                        <span class="fas fa-phone-alt"></span>
                        <span class="footer__text">
-                           <a href=”tel:+79999133981”>+7(999)913-39-81</a>
+                           <a href=”tel:+79267770127”>+7(926)777-01-27</a>
                        </span>
                    </div>
+                   <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="footer__text">
+                        <a href=”tel:+7999913381”>+7(999)913-39-81</a>
+                    </span>
+                </div>
                    <div class="email">
                        <span class="fas fa-envelope"></span>
                        <span class="footer__text">
-                           <a href="mailto:javascript2022@gmail.com">dedowsk@inbox.ru</a>
+                           <a href="mailto:mail@sistemapoliva.com">mail@sistemapoliva.ru</a>
                        </span>
                    </div>
                </div>
