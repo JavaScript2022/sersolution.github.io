@@ -5,7 +5,7 @@
 	margin: 0;
 	border:0;
 	box-sizing: border-box;
-	color: rgb(214, 214, 214);
+	
 	
 }
 
@@ -64,6 +64,7 @@ html,body {
       font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
+    color: #868686;
 }
 
  .swiper{
@@ -88,7 +89,7 @@ html,body {
       background-size: cover;
       width: 320px;
       background: #151515;
-      box-shadow: 0px 0px 35px rgba(127,255,0,0.9);
+      box-shadow: 0px 0px 20px rgba(127,255,0,0.9);
       filter: blur(4px);
       border-radius: 10px;
     }
@@ -161,6 +162,93 @@ html,body {
 
  /*swiper about end*/
 
+
+ /*services start*/
+
+ .services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #151515;
+    
+}
+
+.container__services {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 1100px;
+
+
+}
+
+.container__services .card__services {
+      width: 300px;
+      margin: 20px;
+      padding: 40px 30px;
+      background: #151515;
+      border-radius: 40px;
+      box-shadow: inset -3px -3px 7px rgba(255,255,255,0.1),
+                  inset 3px 3px 5px rgba(0,0,0,0.8) 
+}
+
+
+.container__services .card__services .imgBx {
+      position: relative;
+      text-align: center;
+
+}
+
+.container__services .card__services .imgBx img {
+      max-width: 120px;
+      
+}
+
+.container__services .card__services .contentBx {
+      position: relative;
+      margin-top: 20px;
+      text-align: center;
+}
+
+
+.container__services .card__services .contentBx h2 {
+      color: #868686;
+      font-weight: 700;
+      font-size: 1.4em;
+      letter-spacing: 2px;
+}
+
+.container__services .card__services .contentBx p {
+      color: #868686;
+}
+
+.container__services .card__services .contentBx a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 40px;
+      color: #339933;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow:  -3px -3px 7px rgba(255,255,255,0.1),
+             3px 3px 5px rgba(0,0,0,0.8) 
+}
+
+.container__services .card__services .contentBx a:hover {
+      box-shadow: inset -3px -3px 7px rgba(255,255,255,0.1),
+           inset  3px 3px 5px rgba(0,0,0,0.8) 
+}
+
+.container__services .card__services a:hover span {
+      display: block;
+      transform: scale(0.98);
+}
+
+ /*services end*/
+
 .container {
 	max-width: 1180px;
 	margin: 0 auto;
@@ -183,6 +271,7 @@ html,body {
 	top:0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.8);
+
 	z-index: 2;
 }
 
@@ -200,7 +289,7 @@ html,body {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 600;
-	
+      color: #fff;
 
 }
 
@@ -234,6 +323,7 @@ html,body {
 .content__text {
 	font-size: 16px;
 	line-height: 25px ;
+      color: #868686;
 }
 
 .content__text p {
@@ -374,11 +464,14 @@ html,body {
 	background: #151515;
       display: flex;
 	transition: all 0.8s ease 0s;
+      color: #868686;
 }
 
 .main-content .box {
       flex-basis: 50%;
       padding: 10px 20px;
+      
+      
 }
 
 .box h2 {
@@ -418,6 +511,10 @@ html,body {
     margin: 20px 0 0 0;  
 }
 
+.social a {
+      color: #868686;
+}
+
 .left .footer__content .social a{
       padding: 0 2px;
 }
@@ -446,6 +543,7 @@ html,body {
       border-radius: 50%;
       transition: 00.3s;
       cursor: pointer;
+      
 }
 
 .center .footer__content .fas:hover {
@@ -460,6 +558,7 @@ html,body {
 
 .center .footer__content .phone {
       margin: 10px 0;
+      color: #868686;
 }
 
 .right form .footer__text {
@@ -468,16 +567,33 @@ html,body {
      color: #656565; 
 }
 
+.footer__text a {
+      color: #868686;
+      text-decoration: none;
+}
+
 .right form .msg {
       margin-top: 10px;
 }
 
 .right form input, .right form textarea{
-      width: 100%;
-      font-size: 1.0625rem;
+     /*
+      
+      
       background: #151515 ;
       padding-left: 10px;
       border: 1px solid #222222;
+*/
+      
+
+   
+      font-size: 1.0625rem;
+      outline: none;
+     width: 100%;
+      color: #868686;
+      border: 1px solid #444;
+      caret-color: #339933;
+      background: linear-gradient(#333,#222);
 }
 
 .right form input{
@@ -486,8 +602,26 @@ html,body {
 
 .right form input:focus,
  .right form textarea:focus{
-       outline-color: #339933;
+      
+            
+            box-shadow: 0 0 5px rgba(0,255,0,.2),
+                        inset 0 0 5px rgba(0,255,0,.1);
+            background: linear-gradient(#333933,#222922);
+            animation: glow .8s ease-out infinite alternate;
+        
  }
+ @keyframes glow {
+      0%{
+          border-color: #339933;
+          box-shadow: 0 0 5px rgba(0,255,0,.2),
+                      inset 0 0 5px rgba(0,0,0,.1);
+      }
+      100%{
+          border-color: #6f6;
+          box-shadow: 0 0 20px rgba(0,255,0,.2),
+                      inset 0 0 10px rgba(0,255,0,.4);
+      }
+  }
 
  .right form .footer__btn {
        margin-top: 10px;
