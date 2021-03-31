@@ -42,7 +42,7 @@ html,body {
 	 top: 100px;
 	 left: 10px;
 	 right: 10px;
-	max-width: 1180px;
+	
       
        font-size: 20px;
        
@@ -51,6 +51,7 @@ html,body {
  }
 
  .banner__text p {
+	max-width: 1180px;
     border: 1px solid #fff;  
     border-radius: 10px; 
     background: rgba(0, 0, 0, 0.5);
