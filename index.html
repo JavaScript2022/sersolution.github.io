@@ -38,10 +38,10 @@
                                 <a href="#about" class="header__link">о нас</a>
                             </li>
                             <li>
-                              <a href="#" class="header__link">услуги</a>
+                              <a href="#services" class="header__link">услуги</a>
                             </li>
                             <li>
-                              <a href="#" class="header__link">галерея</a>
+                              <a href="#gallery" class="header__link">галерея</a>
                             </li>
                             <li>
                               <a href="#contacts" class="header__link">контакты</a>
@@ -78,9 +78,9 @@
    <h2 class="about" id="about">о нас</h2>
   </div>
    <section  class="swiper">  <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container swiper-container1">
       <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide1">
                 <div class="testimonialBox">
                     
                     <div class="content">
@@ -94,7 +94,7 @@
                     </div> 
                 </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide1">
                 <div class="testimonialBox">
                     
                     <div class="content">
@@ -108,7 +108,7 @@
                     </div> 
                 </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide1">
                 <div class="testimonialBox">
                     <img src="quote.png" class="quote" alt=""> 
                     <div class="content">
@@ -122,7 +122,7 @@
                     </div> 
                 </div>
           </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide1">
               <div class="testimonialBox">
                   <img src="quote.png" class="quote" alt=""> 
                   <div class="content">
@@ -163,7 +163,9 @@
   </script>
 
 
-
+<div class="title__about">
+    <h2 class="about" id="services">услуги</h2>
+   </div>
 <section class="services">
     <div class="container__services">
         <div class="card__services">
@@ -201,16 +203,55 @@
 
 
 
+<div class="title__about">
+    <h2 class="about" id="gallery">галерея</h2>
+   </div>
+<div class="swiper2">
+    <div class="swiper-container swiper-container2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container2', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+            loop: true,
+            autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+      },
+        });
+      </script>
+
+
+
 
       <section class="content">
           <div class="container">
               <div class="content__text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vero in doloremque reprehenderit, maiores sint ad expedita voluptate officiis iusto cum, alias est recusandae doloribus molestiae totam nostrum deleniti itaque, architecto dolorum dicta. Perferendis tempora, suscipit esse tempore tenetur voluptate dolorem maiores ea eius aspernatur iste molestias voluptatum et? Distinctio, nemo mollitia esse impedit, blanditiis qui labore tempore aut nulla minus pariatur consectetur nesciunt eius autem nam iste ullam cupiditate. Dolor dolorum architecto deserunt, nobis vitae accusantium cum voluptas nesciunt quia incidunt voluptatibus velit harum iure officiis tempora dignissimos mollitia autem at, perspiciatis natus dolorem repellat facilis sapiente corporis. Consequuntur distinctio est voluptatem, omnis incidunt, dolorem cum nulla ipsa possimus hic reiciendis dignissimos ad. Voluptatem quia laborum odit corrupti doloremque voluptas quisquam magni recusandae, corporis earum provident impedit eos unde esse repellat ipsam expedita quod porro soluta, dolorum eaque veniam similique maxime? Asperiores exercitationem eius modi eum dolorem, veniam nam sapiente praesentium, maiores quasi at, sit iure ducimus! Voluptas beatae sapiente fuga, fugit impedit sit eos necessitatibus corrupti quo, veniam placeat molestiae cupiditate officiis nesciunt ipsam eligendi consequuntur qui nisi facere iste itaque. Dolorem et ratione accusantium quae tenetur corrupti, provident voluptatem, dolor quam ex odit. Eaque blanditiis eos doloribus temporibus velit? Placeat nulla vitae ratione, commodi nostrum voluptatum dignissimos aliquid id voluptatem ut sed dolore, voluptate, deleniti rerum consequuntur impedit ducimus eum magnam mollitia? Possimus laudantium, dolorem sapiente in, eligendi odit velit sint, itaque quaerat ipsam illum? Iure a accusantium voluptas ab, eligendi dolores placeat saepe id quod autem similique culpa recusandae, amet minima in. Totam id, voluptatum asperiores aspernatur sunt assumenda fugiat neque explicabo laudantium consequuntur iusto nesciunt voluptates quia nihil voluptatibus alias itaque, beatae culpa consequatur doloribus, earum saepe laborum? Quam nulla iusto voluptate perspiciatis similique quidem fugiat optio a fugit laboriosam porro, consequatur odio eaque sed nisi possimus odit. Quam, nam quisquam enim nemo nostrum eos! Incidunt, autem unde in velit suscipit corporis at. Accusantium dignissimos itaque repudiandae! Itaque veniam corporis consequatur distinctio repudiandae, explicabo, nam mollitia voluptatem nesciunt quas non officiis accusantium assumenda aperiam neque dignissimos maiores rem et commodi nihil eveniet! Exercitationem vero fugit unde illum adipisci quo voluptates dolore iure id natus quisquam aliquid facilis vitae commodi ducimus numquam, quia est quasi similique recusandae quos eius. Harum, dicta necessitatibus. Distinctio sunt reiciendis omnis saepe, iure cupiditate possimus debitis necessitatibus adipisci natus consequuntur molestiae inventore iusto rerum eligendi, exercitationem soluta at alias qui voluptates magnam sint non eveniet iste. Sint officiis animi perspiciatis. Laborum ipsum, ad tempore assumenda ducimus sunt, quaerat illo earum facere quisquam saepe nesciunt. Doloremque beatae nobis similique nemo expedita doloribus aut ut, tempore qui voluptate nulla quas enim veritatis ipsum quidem assumenda, maiores magni adipisci quod excepturi consequatur. Voluptates assumenda perferendis nihil, incidunt similique modi praesentium labore at rem laboriosam odio! Natus, atque adipisci qui vitae odio, accusantium fugit a laudantium delectus hic repellendus fugiat accusamus sint earum sit nam, quia dicta excepturi sunt id quod error nisi! Officia itaque sint reprehenderit non modi sapiente reiciendis odit iure praesentium id.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vero in doloremque reprehenderit, maiores sint ad expedita voluptate officiis iusto cum, alias est recusandae doloribus molestiae totam nostrum deleniti itaque, architecto dolorum dicta. Perferendis tempora, suscipit esse tempore tenetur voluptate dolorem maiores ea eius aspernatur iste molestias voluptatum et? Distinctio, nemo mollitia esse impedit, blanditiis qui labore tempore aut nulla minus pariatur consectetur nesciunt eius autem nam iste ullam cupiditate. Dolor dolorum architecto deserunt, nobis vitae accusantium cum voluptas nesciunt quia incidunt voluptatibus velit harum iure officiis tempora dignissimos mollitia autem at, perspiciatis natus dolorem repellat facilis sapiente corporis. Consequuntur distinctio est voluptatem, omnis incidunt, dolorem cum nulla ipsa possimus hic reiciendis dignissimos ad. Voluptatem quia laborum odit corrupti doloremque voluptas quisquam magni recusandae, corporis earum provident impedit eos unde esse repellat ipsam expedita quod porro soluta, dolorum eaque veniam similique maxime? Asperiores exercitationem eius modi eum dolorem, veniam nam sapiente praesentium, maiores quasi at, sit iure ducimus! Voluptas beatae sapiente fuga, fugit impedit sit eos necessitatibus corrupti quo, veniam placeat molestiae cupiditate officiis nesciunt ipsam eligendi consequuntur qui nisi facere iste itaque. Dolorem et ratione accusantium quae tenetur corrupti, provident voluptatem, dolor quam ex odit. Eaque blanditiis eos doloribus temporibus velit? Placeat nulla vitae ratione, commodi nostrum voluptatum dignissimos aliquid id voluptatem ut sed dolore, voluptate, deleniti rerum consequuntur impedit ducimus eum magnam mollitia? Possimus laudantium, dolorem sapiente in, eligendi odit velit sint, itaque quaerat ipsam illum? Iure a accusantium voluptas ab, eligendi dolores placeat saepe id quod autem similique culpa recusandae, amet minima in. Totam id, voluptatum asperiores aspernatur sunt assumenda fugiat neque explicabo laudantium consequuntur iusto nesciunt voluptates quia nihil voluptatibus alias itaque, beatae culpa consequatur doloribus, earum saepe laborum? Quam nulla iusto voluptate perspiciatis similique quidem fugiat optio a fugit laboriosam porro, consequatur odio eaque sed nisi possimus odit. Quam, nam quisquam enim nemo nostrum eos! Incidunt, autem unde in velit suscipit corporis at. Accusantium dignissimos itaque repudiandae! Itaque veniam corporis consequatur distinctio repudiandae, explicabo, nam mollitia voluptatem nesciunt quas non officiis accusantium assumenda aperiam neque dignissimos maiores rem et commodi nihil eveniet! Exercitationem vero fugit unde illum adipisci quo voluptates dolore iure id natus quisquam aliquid facilis vitae commodi ducimus numquam, quia est quasi similique recusandae quos eius. Harum, dicta necessitatibus. Distinctio sunt reiciendis omnis saepe, iure cupiditate possimus debitis necessitatibus adipisci natus consequuntur molestiae inventore iusto rerum eligendi, exercitationem soluta at alias qui voluptates magnam sint non eveniet iste. Sint officiis animi perspiciatis. Laborum ipsum, ad tempore assumenda ducimus sunt, quaerat illo earum facere quisquam saepe nesciunt. Doloremque beatae nobis similique nemo expedita doloribus aut ut, tempore qui voluptate nulla quas enim veritatis ipsum quidem assumenda, maiores magni adipisci quod excepturi consequatur. Voluptates assumenda perferendis nihil, incidunt similique modi praesentium labore at rem laboriosam odio! Natus, atque adipisci qui vitae odio, accusantium fugit a laudantium delectus hic repellendus fugiat accusamus sint earum sit nam, quia dicta excepturi sunt id quod error nisi! Officia itaque sint reprehenderit non modi sapiente reiciendis odit iure praesentium id.
-                </p>
+                <p></p>
+                <p></p>
               </div>
           </div>
       </section>
@@ -224,10 +265,12 @@
                  <div class="footer__content">
                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam maxime commodi consequuntur a mollitia voluptas quia facilis omnis consectetur deleniti! Beatae dicta molestias asperiores laborum exercitationem cupiditate aut rerum neque?</p>
                      <div class="social">
-                         <a href="#"><span class="fab fa-facebook-f"></span></a>
+                         <a href="https://www.facebook.com/sistemapoliva"><span class="fab fa-facebook-f"></span></a>
                          <a href="#"><span class="fab fa-twitter"></span></a>
-                         <a href="#"><span class="fab fa-instagram"></span></a>
-                         <a href="#"><span class="fab fa-tiktok"></span></a>
+                         <a href="https://www.instagram.com/sistema_poliva"><span class="fab fa-instagram"></span></a>
+                         <a href="https://www.tiktok.com/@bondarser"><span class="fab fa-tiktok"></span></a>
+                         <a href="#"><span class="fab fa-youtube"></span></a>
+                         <a href="https://vk.com/sistemapoliva_ru"><span class="fab fa-vk"></span></a>
                      </div>
                  </div>
               </div>
@@ -280,7 +323,7 @@
           </div>
           <div class="bottom">
                 <center>
-                      <span class="credit">Created By <a href="#">Sergei Bondar</a></span>
+                      <span class="credit">Created By <a href="https://www.instagram.com/serbondar/">Sergei Bondar</a></span>
                       <span class="far fa-copyright"></span>
                       <span>2021.</span>
                 </center>
