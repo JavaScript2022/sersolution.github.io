@@ -11,6 +11,15 @@
 </head>
 <body>
 
+  <div class="lds-ring loader" id="loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+
   <div class="wrapper">
 
 
@@ -32,19 +41,19 @@
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li>
-                                <a href="#start" class="header__link">главная</a>
+                                <a data-goto=".banner" href="#" class="header__link">главная</a>
                             </li>
                              <li>
-                                <a href="#about" class="header__link">о нас</a>
+                                <a data-goto=".about" href="#" class="header__link">о нас</a>
                             </li>
                             <li>
-                              <a href="#services" class="header__link">услуги</a>
+                              <a data-goto=".services1" href="#" class="header__link">услуги</a>
                             </li>
                             <li>
-                              <a href="#gallery" class="header__link">галерея</a>
+                              <a data-goto=".gallery1" href="#" class="header__link">галерея</a>
                             </li>
                             <li>
-                              <a href="#contacts" class="header__link">контакты</a>
+                              <a data-goto=".main-content" href="#" class="header__link">контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -164,7 +173,7 @@
 
 
 <div class="title__about">
-    <h2 class="about" id="services">услуги</h2>
+    <h2 class="about services1" id="services">услуги</h2>
    </div>
 <section class="services">
     <div class="container__services">
@@ -204,7 +213,7 @@
 
 
 <div class="title__about">
-    <h2 class="about" id="gallery">галерея</h2>
+    <h2 class="about gallery1" id="gallery">галерея</h2>
    </div>
 <div class="swiper2">
     <div class="swiper-container swiper-container2">
