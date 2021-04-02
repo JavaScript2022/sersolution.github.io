@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/icons.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Services and solutions</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 
@@ -183,7 +183,17 @@
               </div>
               <div class="contentBx">
                     <h2>Автополив</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, facere repellendus! Rem, incidunt. Possimus dolore, nobis, minima impedit veritatis fugit beatae similique debitis error voluptas illo blanditiis corrupti tempore qui vero voluptatibus facilis? </p>
+                    <p>Консультации <br>
+                      Подбор оборудования <br>
+                        Проектирование <br>
+                        Обучение <br>
+                      Шеф-монтаж <br>
+                      Монтаж <br>
+                      Обслуживание <br>
+                      Ремонт <br> 
+                      Модернизация <br>
+                      Консервация на зиму
+                     </p>
                     <a href="http://sistemapoliva.ru/"><span>Подробнее</span></a>
               </div>
         </div>
@@ -219,12 +229,12 @@
     <div class="swiper-container swiper-container2">
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
-          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
-          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
-          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
-          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
-          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
-          <div class="swiper-slide swiper-slide2"><img src="foto/foto1.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto2.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto3.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto4.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto5.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto6.jpg" alt=""></div>
+          <div class="swiper-slide swiper-slide2"><img src="foto/foto7.jpg" alt=""></div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -314,17 +324,17 @@
               <div class="right box">
                   <h2>Напишите нам</h2>
                   <div class="footer__content">
-                      <form action="#">
-                          <div class="email">
-                              <div class="footer__text">Почта *</div>
-                              <input type="email" required name="" id="">
+                      <form action="php/telegram.php" method="POST" id="form" class="form__body">
+                          <div class="email" >
+                              <div class="footer__text">Телефон *</div>
+                              <input type="tel" required name="user_phone" id="">
                           </div>
                           <div class="msg">
                            <div class="footer__text">Сообщение *</div>
-                           <textarea name="" id="" required cols="25" rows="2"></textarea>
+                           <textarea name="user_message" id="" required cols="25" rows="2"></textarea>
                           </div>
                           <div class="footer__btn">
-                              <button type="submit">Отправить</button>
+                              <button type="submit" class="form__button">Отправить</button>
                           </div>
                       </form>
                   </div>
