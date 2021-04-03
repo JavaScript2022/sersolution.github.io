@@ -25,7 +25,7 @@ html,body {
 	
   }
 
-  #popup1, #popup2 {
+  #popup1, #popup2, #popup3 {
       position: fixed;
       margin-top: 50px ;
       top:40%;
@@ -42,14 +42,14 @@ html,body {
       transition: 0.9s;
       
   }
-  #popup1.active, #popup2.active {
+  #popup1.active, #popup2.active, #popup3.active {
       top: 40%;
       visibility: visible;
       opacity: 1;
-      transition: 0.9s;
+      transition: 1.3s;
   }
 
-  .popup a {
+  .popup__botton {
       
       display: inline-block;
       padding: 10px 20px;
@@ -62,6 +62,24 @@ html,body {
              3px 3px 5px rgba(0,0,0,0.8) 
 
   }
+
+  .popup__botton:hover {
+      box-shadow: inset -3px -3px 7px rgba(255,255,255,0.1),
+           inset  3px 3px 5px rgba(0,0,0,0.8) 
+}
+
+.popup__link {
+      text-decoration: none;
+      color: #868686;
+      border: 1px solid #868686;
+      border-radius: 5px;
+}
+
+.popup__link:hover {
+      color:#fff;
+      border-color: #fff;
+}
+
 /*popup end*/
 
 .banner{
