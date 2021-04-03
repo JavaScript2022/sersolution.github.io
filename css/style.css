@@ -16,6 +16,54 @@ html,body {
 	background: #151515;
 }
 
+/*popup start*/
+.wrapper#blur.active {
+      filter: blur(20px);
+      pointer-events: none;
+      user-select: none;
+      
+	
+  }
+
+  #popup1, #popup2 {
+      position: fixed;
+      margin-top: 50px ;
+      top:40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 10px;
+      min-width: 300px;
+      padding: 20px;
+      box-shadow: 0 5px 30px rgba(0,0,0,.30);
+      background: #151515;
+      color: #868686;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.9s;
+      
+  }
+  #popup1.active, #popup2.active {
+      top: 40%;
+      visibility: visible;
+      opacity: 1;
+      transition: 0.9s;
+  }
+
+  .popup a {
+      
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 40px;
+      color: #339933;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow:  -3px -3px 7px rgba(255,255,255,0.1),
+             3px 3px 5px rgba(0,0,0,0.8) 
+
+  }
+/*popup end*/
+
 .banner{
 	min-height: 100vh;
 	 position: relative;
@@ -44,7 +92,7 @@ html,body {
 	 right: 10px;
 	
       
-       font-size: 20px;
+       font-size: 18px;
      }   
   
 
@@ -56,7 +104,7 @@ html,body {
     border: 1px solid #fff;  
     border-radius: 10px; 
     background: rgba(0, 0, 0, 0.5);
-    padding: 10px; 
+    padding: 5px 10px ; 
     text-align: center;
  }
 
@@ -202,6 +250,7 @@ html,body {
 }
 
 .container__services .card__services {
+      height: 460px;
       width: 300px;
       margin: 20px;
       padding: 40px 30px 40px 30px;
@@ -238,7 +287,13 @@ html,body {
 }
 
 .container__services .card__services .contentBx p {
+      text-align: left;
       color: #868686;
+}
+
+.contentBx  li {
+      color: #868686;
+      text-align: left;
 }
 
 .container__services .card__services .contentBx a {
@@ -287,7 +342,7 @@ html,body {
     .swiper-container2 {
       width: 100%;
       padding-top: 50px;
-      padding-bottom: 150px;
+      padding-bottom: 180px;
       
     }
   
@@ -297,7 +352,7 @@ html,body {
       width: 300px;
       height: 450px;
       background: #000 ;
-      -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(0, 0, 0, 0.15));
+      -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(0, 0, 0, 0.25));
     }
 
 
