@@ -64,7 +64,7 @@
 
 
       
-      <div class="banner" id="start" style="background-image: url(img/banner.jpg);">
+      <div class="banner" id="start" style="background-image: url(img/banner1.jpg);">
         
         <div class="banner__text">
             
@@ -177,7 +177,7 @@
    </div>
 <section class="services">
     <div class="container__services">
-        <div class="card__services">
+        <div id="irrigation" class="card__services">
               <div class="imgBx">
                     <img src="img/poliv.png" alt="">
               </div>
@@ -194,10 +194,10 @@
                       Модернизация <br>
                       Консервация на зиму
                      </p>
-                    <a href="http://sistemapoliva.ru/"><span>Подробнее</span></a>
+                    <a href="#" onclick="toggle3()"><span>Подробнее</span></a>
               </div>
         </div>
-        <div class="card__services">
+        <div  id="lighting" class="card__services">
               <div class="imgBx">
                     <img src="img/svet.png" alt="">
               </div>
@@ -218,17 +218,17 @@
                         Обслуживание<br>
                         Модернизация<br>
                       </p>
-                    <a href="#services" onclick="toggle1()"><span>Подробнее</span></a>
+                    <a href="#" onclick="toggle1()"><span>Подробнее</span></a>
               </div>
         </div>
-        <div class="card__services">
+        <div  id="video" class="card__services">
               <div class="imgBx">
                     <img src="img/kamera.png" alt="">
               </div>
               <div class="contentBx">
                     <h2>Видеонаблюдение</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, facere repellendus! Rem, incidunt. Possimus dolore, nobis, minima impedit veritatis fugit beatae similique debitis error voluptas illo blanditiis corrupti tempore qui vero voluptatibus facilis? </p>
-                    <a href="#services" onclick="toggle2()"><span>Подробнее</span></a>
+                    <a href="#" onclick="toggle2()"><span>Подробнее</span></a>
               </div>
         </div>
   </div>
@@ -375,7 +375,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo recusandae aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo recusandae aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
   
-    <a href="#services" onclick="toggle1()">Close</a>
+    <a class="popup__botton" href="#lighting" onclick="toggle1()">Close</a>
 </div>
 
 <div id="popup2" class="popup">
@@ -383,7 +383,15 @@
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo recusandae aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo recusandae aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
 
-  <a href="#services" onclick="toggle2()">Close</a>
+  <a class="popup__botton" href="#video" onclick="toggle2()">Close</a>
+</div>
+
+<div id="popup3" class="popup">
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo recusandae aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Ad illo <a class="popup__link" href="http://sistemapoliva.ru/">irrigation</a> aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
+
+  <a class="popup__botton" href="#services" onclick="toggle3()">Close</a>
 </div>
 <script type="text/javascript">
 function toggle1() {
@@ -398,6 +406,13 @@ function toggle2() {
     blur.classList.toggle('active')
     var popup2 = document.getElementById('popup2');
     popup2.classList.toggle('active')
+}
+
+function toggle3() {
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active')
+    var popup3 = document.getElementById('popup3');
+    popup3.classList.toggle('active')
 }
 
 </script>
