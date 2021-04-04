@@ -19,9 +19,7 @@ html,body {
 
 /*popup start*/
 
-.wrapper#blur {
-      transition: 1.1s; 
-}
+
 
 .wrapper#blur.active {
 
