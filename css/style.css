@@ -39,14 +39,14 @@ html,body {
       color: #868686;
       visibility: hidden;
       opacity: 0;
-      transition: 0.9s;
+      transition: 1.3s;
       
   }
   #popup1.active, #popup2.active, #popup3.active {
       top: 40%;
       visibility: visible;
       opacity: 1;
-      transition: 1.3s;
+      transition: 1.9s;
   }
 
   .popup__botton {
@@ -55,7 +55,7 @@ html,body {
       padding: 10px 20px;
       margin-top: 15px;
       border-radius: 40px;
-      color: #339933;
+      color: #868686;
       font-size: 16px;
       text-decoration: none;
       box-shadow:  -3px -3px 7px rgba(255,255,255,0.1),
@@ -64,6 +64,7 @@ html,body {
   }
 
   .popup__botton:hover {
+	color: #339933;
       box-shadow: inset -3px -3px 7px rgba(255,255,255,0.1),
            inset  3px 3px 5px rgba(0,0,0,0.8) 
 }
