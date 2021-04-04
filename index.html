@@ -70,7 +70,7 @@
             
             <p><span class="fas fa-pencil-ruler"></span>  Инженерные решения по системам автоматического полива, освещения и видеонаблюдения</p>
             <br>
-            <p><span class="far fa-smile"> </span>  Для полного комфорта, уюта и безопасности на Вашем приусадебном участке</p>
+            <p><span class="far fa-smile"> </span>  Для полного комфорта, уюта и безопасности</p>
             <br>
             <p><span class="fas fa-mobile-alt"> </span>  С возможностью контроля и управления с большинства современных гаджетов</p>
             
@@ -194,7 +194,7 @@
                       Модернизация <br>
                       Консервация на зиму
                      </p>
-                    <a href="#" onclick="toggle3()"><span>Подробнее</span></a>
+                    <a href="#services" onclick="toggle3()"><span>Подробнее</span></a>
               </div>
         </div>
         <div  id="lighting" class="card__services">
@@ -218,7 +218,7 @@
                         Обслуживание<br>
                         Модернизация<br>
                       </p>
-                    <a href="#" onclick="toggle1()"><span>Подробнее</span></a>
+                    <a href="#lighting" onclick="toggle1()"><span>Подробнее</span></a>
               </div>
         </div>
         <div  id="video" class="card__services">
@@ -227,8 +227,21 @@
               </div>
               <div class="contentBx">
                     <h2>Видеонаблюдение</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, facere repellendus! Rem, incidunt. Possimus dolore, nobis, minima impedit veritatis fugit beatae similique debitis error voluptas illo blanditiis corrupti tempore qui vero voluptatibus facilis? </p>
-                    <a href="#" onclick="toggle2()"><span>Подробнее</span></a>
+                    <p>Решения:<br>
+                      <ul> 
+                       <li>Для приусадебных участков</li>
+                       <li>Для дома</li>
+                       <li>Для бизнеса</li>
+                        </ul>
+                        </p> 
+                        <p>
+                        Монтаж камер <br>
+                        Прокладка сл-точных линий<br>
+                        Интеграция оборудования<br>
+                        Инструктаж<br>
+                        Обслуживание<br>
+                        Модернизация<br></p>
+                    <a href="#video" onclick="toggle2()"><span>Подробнее</span></a>
               </div>
         </div>
   </div>
@@ -263,15 +276,15 @@
           centeredSlides: true,
           slidesPerView: 'auto',
           coverflowEffect: {
-            rotate: 20,
+            rotate: 0,
             stretch: 0,
-            depth: 200,
+            depth: 500,
             modifier: 1,
             slideShadows: true,
           },
             loop: true,
             autoplay: {
-            delay: 1500,
+            delay: 3500,
             disableOnInteraction: false,
       },
         });
@@ -318,13 +331,13 @@
                    <div class="phone">
                        <span class="fas fa-phone-alt"></span>
                        <span class="footer__text">
-                           <a href=”tel:+79267770127”>+7(926)777-01-27</a>
+                           <a href="tel:+79267770127">+7(926)777-01-27</a>
                        </span>
                    </div>
                    <div class="phone">
                     <span class="fas fa-phone-alt"></span>
                     <span class="footer__text">
-                        <a href=”tel:+7999913381”>+7(999)913-39-81</a>
+                        <a href="tel:+7999913381">+7(999)913-39-81</a>
                     </span>
                 </div>
                    <div class="email">
@@ -345,7 +358,7 @@
                           </div>
                           <div class="msg">
                            <div class="footer__text">Сообщение *</div>
-                           <textarea name="user_message" id="" required cols="25" rows="2"></textarea>
+                           <textarea  name="user_message" id="" required cols="25" rows="2"></textarea>
                           </div>
                           <div class="footer__btn">
                               <button type="submit" class="form__button">Отправить</button>
@@ -387,9 +400,8 @@
 </div>
 
 <div id="popup3" class="popup">
-  <h2>Lorem ipsum dolor sit amet.</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illo recusandae aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Ad illo <a class="popup__link" href="http://sistemapoliva.ru/">irrigation</a> aut eum maiores obcaecati ipsam sint minus commodi amet eligendi nam quidem aspernatur dolorum harum voluptas, consequatur, quaerat consequuntur? Ullam maiores quaerat harum officiis.</p>
+  <h2>Система автоматического полива </h2>
+  <p>- это комплекс компетенции и знаний инженеров, агрономов и ландшафтных дизайнеров. Это принятие ответственности на всех этапах и качественное обслуживание. Это идеалогия и подход долгосрочного сотрудничества. Такая обширная тема заслуживает <a class="popup__link" href="http://sistemapoliva.ru/">отдельного рассмотрения.</a> </p>
 
   <a class="popup__botton" href="#services" onclick="toggle3()">Close</a>
 </div>
