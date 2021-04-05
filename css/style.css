@@ -26,7 +26,7 @@ html,body {
       filter: blur(20px);
       pointer-events: none;
       user-select: none;
-      transition: 1.1s;
+      
      
 	
   }
